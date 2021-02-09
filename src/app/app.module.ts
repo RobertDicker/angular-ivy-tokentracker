@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TokenMainComponent } from './token-main/token-main.component';
+import { TokenService } from './token.service';
 
 
 
@@ -17,6 +18,7 @@ import { TokenMainComponent } from './token-main/token-main.component';
   
   
   declarations: [ AppComponent, TopBarComponent, TokenMainComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [TokenService]
 })
 export class AppModule { }
